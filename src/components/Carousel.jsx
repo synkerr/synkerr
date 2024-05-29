@@ -133,9 +133,9 @@ const Carousel = React.forwardRef((props, ref) => {
 	}, [autoSlideEnabled]); // Re-run effect when auto slide state changes
 
 	return (
-		<div ref={ref} className="h-screen w-full bg-black text-5xl flex flex-col justify-center items-center mt-60">
-			<div className="h-[20%] w-full bg-black flex justify-center items-center">
-				<h1 className="" id="Team">
+		<div ref={ref} className="h-screen w-full bg-black text-5xl flex flex-col justify-center items-center mt-30">
+			<div className="h-[20%] w-full bg-black flex justify-center">
+				<h1 className="flex" id="Team">
 					OUR TEAM
 				</h1>
 			</div>
