@@ -143,7 +143,7 @@ const Carousel = React.forwardRef((props, ref) => {
 					</div>
 				</div>
 			</div>
-			<div className="h-[75%] w-full bg-black flex justify-center items-center gap-10 p-10 relative">
+			<div className="h-[75%] w-full bg-black flex justify-center items-center gap-10 p-10 relative md:flex-row flex-col">
 				<button
 					className="carousel-btn right border-2 rounded-full p-3 border-[#A79FFF] hidden md:block"
 					onClick={() => {
@@ -197,6 +197,52 @@ const Carousel = React.forwardRef((props, ref) => {
 							</div>
 						</div>
 					))}
+				</div>
+				<div className="flex block md:hidden">
+					<button
+						className="carousel-btn right border-2 rounded-full p-3 border-[#A79FFF] "
+						onClick={() => {
+							scrollCarousel("left");
+							stopAutoSlide();
+						}}
+					>
+						{
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 25 25"
+								width="20"
+								height="20"
+							>
+								<path
+									style={{ fill: "#A79FFF" }}
+									d="M24 12.001H2.914l5.294-5.295-.707-.707L1 12.501l6.5 6.5.707-.707-5.293-5.293H24v-1z"
+									data-name="Left"
+								/>
+							</svg>
+						}
+					</button>
+					<button
+						className="carousel-btn right border-2 rounded-full p-3 border-[#A79FFF]"
+						onClick={() => {
+							scrollCarousel("right");
+							stopAutoSlide();
+						}}
+					>
+						{
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 25 25"
+								width="20"
+								height="20"
+							>
+								<path
+									style={{ fill: "#A79FFF" }}
+									d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z"
+									data-name="Right"
+								/>
+							</svg>
+						}
+					</button>
 				</div>
 				<button
 					className="carousel-btn right border-2 rounded-full p-3 border-[#A79FFF] hidden md:block"
