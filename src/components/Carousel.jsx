@@ -51,26 +51,7 @@ const Carousel = React.forwardRef((props, ref) => {
 					"https://img.freepik.com/free-photo/close-up-portrait-smiling-young-bearded-man_171337-4819.jpg?w=1060&t=st=1713959851~exp=1713960451~hmac=34940b0d57af03134523c3886b183e38c73ce7678f31fe88965bd80f1d10ff46",
 			},
 		],
-		webTeam: [
-			{
-				name: "Abhay Tai",
-				role: "Founder",
-				image:
-					"https://media.licdn.com/dms/image/D5603AQFm5xdxd0vHKA/profile-displayphoto-shrink_100_100/0/1712607280250?e=1720656000&v=beta&t=dLXQtOIiC5v-M6PJf8M67iKpUwgKDYP4bamsx0rWLz4",
-			},
-			{
-				name: "Sahil Mengji",
-				role: "Co-Founder",
-				image:
-					"https://media.licdn.com/dms/image/D5603AQEamguVr4e5UA/profile-displayphoto-shrink_400_400/0/1701718025399?e=1720656000&v=beta&t=Rx05yZTySavIqsUoFPgtmjMbxvND10Nvg0GddUolyPQ",
-			},
-			{
-				name: "Sahil Kumar",
-				role: "Co-Founder",
-				image:
-					"https://img.freepik.com/free-photo/close-up-portrait-smiling-young-bearded-man_171337-4819.jpg?w=1060&t=st=1713959851~exp=1713960451~hmac=34940b0d57af03134523c3886b183e38c73ce7678f31fe88965bd80f1d10ff46",
-			},
-		],
+		webTeam: [],
 		designTeam: [],
 		marketingTeam: [],
 	};
@@ -164,7 +145,7 @@ const Carousel = React.forwardRef((props, ref) => {
 			</div>
 			<div className="h-[75%] w-full bg-black flex justify-center items-center gap-10 p-10 relative">
 				<button
-					className="carousel-btn right border-2 rounded-full p-3 border-[#A79FFF]"
+					className="carousel-btn right border-2 rounded-full p-3 border-[#A79FFF] hidden md:block"
 					onClick={() => {
 						scrollCarousel("left");
 						stopAutoSlide();
@@ -174,8 +155,8 @@ const Carousel = React.forwardRef((props, ref) => {
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 25 25"
-							width="24"
-							height="24"
+							width="20"
+							height="20"
 						>
 							<path
 								style={{ fill: "#A79FFF" }}
@@ -206,7 +187,7 @@ const Carousel = React.forwardRef((props, ref) => {
 									/>
 									<img
 										className="absolute w-[60px] h-[60px] bottom-[-15px] right-[-15px]"
-										src="/linkedin.svg"
+										src="linkedin.svg"
 										alt=""
 									/>
 								</div>
@@ -218,7 +199,7 @@ const Carousel = React.forwardRef((props, ref) => {
 					))}
 				</div>
 				<button
-					className="carousel-btn right border-2 rounded-full p-3 border-[#A79FFF]"
+					className="carousel-btn right border-2 rounded-full p-3 border-[#A79FFF] hidden md:block"
 					onClick={() => {
 						scrollCarousel("right");
 						stopAutoSlide();
@@ -228,8 +209,8 @@ const Carousel = React.forwardRef((props, ref) => {
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 25 25"
-							width="24"
-							height="24"
+							width="20"
+							height="20"
 						>
 							<path
 								style={{ fill: "#A79FFF" }}

@@ -19,12 +19,12 @@ export default function HeroSectionCentre() {
 			</p>
 			<img
 				className="absolute rounded-full w-[300px] top-[-100px] lg:w-auto left-[-80px] md:w-auto lg:top-[-100px] lg:left-[-100px]"
-				src="/center1.svg"
+				src="center1.svg"
 				alt=""
 			/>
 			<img
 				className="absolute  w-[200px] bottom-[-140px] right-[-60px] lg:w-auto lg:top-[30px] lg:right-[-120px] md:w-auto md:top-[30px] md:right-[-120px]"
-				src="/center2.svg"
+				src="center2.svg"
 				alt=""
 			/>
 		</div>

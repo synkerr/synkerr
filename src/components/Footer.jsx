@@ -5,7 +5,7 @@ function Footer() {
     <div className="">
       <div className="main w-full bg-[#110725] h-76 p-10 flex">
       <div className="w-2/4 align-center p-10">
-        <img src="public/logo.svg" alt=""/>
+        <img src="logo.svg" alt=""/>
         <div className="flex justify-self-start mt-5 gap-5">
             <a href="https://www.linkedin.com/company/synkerr/" target="_blank" rel="noopener noreferrer" className="mr-4 flex flex-col">
               <BsLinkedin size={48} />
@@ -27,7 +27,7 @@ function Footer() {
         <div className="capitalize">Join the wishlist</div>
       </div>
     </div>
-    <div className="flex justify-center text-center capitalize h-10 w-full p-3 text-lg">©All rights reserved synker pvt lid.</div>
+    <div className="flex justify-center text-center capitalize h-10 w-full p-3 text-lg">©All rights reserved synkerr pvt lid.</div>
     </div>
     
   )
