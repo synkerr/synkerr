@@ -11,7 +11,7 @@ const App = () => {
 	const TeamRef = useRef(null);
 
 	return (
-		<div className="App min-w-full min-h-screen">
+		<div className="App min-w-full min-h-screen overflow-x-hidden">
 			<HeroSectiontwo TeamRef={TeamRef}/>
 			<Globe />
 			<SocialMedia/>

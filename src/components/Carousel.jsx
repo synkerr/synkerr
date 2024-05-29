@@ -30,6 +30,16 @@ const Carousel = React.forwardRef((props, ref) => {
 				image:
 					"https://img.freepik.com/free-photo/young-adult-enjoying-virtual-date_23-2149328221.jpg?size=626&ext=jpg&ga=GA1.1.546243260.1706593150&semt=ais",
 			},
+			{
+				name:"Sagar",
+				role: "Marketing Head",
+				image:"SagarMedia.jpeg"
+			},
+			{
+				name:"Manish",
+				role:"App Developer",
+				image:"Manish.jpeg"
+			},
 		],
 		Founders: [
 			{
@@ -51,9 +61,42 @@ const Carousel = React.forwardRef((props, ref) => {
 					"https://img.freepik.com/free-photo/close-up-portrait-smiling-young-bearded-man_171337-4819.jpg?w=1060&t=st=1713959851~exp=1713960451~hmac=34940b0d57af03134523c3886b183e38c73ce7678f31fe88965bd80f1d10ff46",
 			},
 		],
-		webTeam: [],
-		designTeam: [],
-		marketingTeam: [],
+		webTeam: [
+			{
+				name:"Nikhil Kottoli",
+				role:"Web Developer",
+				image:"Nikhil.jpg"
+			}
+		],
+		designTeam: [
+			{
+				name: "Rishav",
+				role:"UI/UX Design",
+				image:"Rishav.jpeg"
+			}
+		],
+		marketingTeam: [
+			{
+				name:"Sagar",
+				role: "Marketing Head",
+				image:"SagarMedia.jpeg"
+			}
+		],
+		AppTeam:[
+			{
+				name:"Manish",
+				role:"App Developer",
+				image:"Manish.jpeg",
+			},
+		],
+		BackendTeam:[
+			{
+				name:"Debajyoti",
+				role:"Backend Developer",
+				image:"Debajyoti.jpeg"
+			}
+		],
+		AiTeam:[]
 	};
 
 	const carouselRef = useRef(null);
@@ -140,6 +183,30 @@ const Carousel = React.forwardRef((props, ref) => {
 						onClick={() => setSelectedTab("marketingTeam")}
 					>
 						<span>Marketing-Team</span>
+					</div>
+					<div
+						className={`cursor-pointer  transition duration-300 ease-in-out text-[#999999] ${getTabClassName(
+							"AppTeam"
+						)}`}
+						onClick={() => setSelectedTab("AppTeam")}
+					>
+						<span>App-Team</span>
+					</div>
+					<div
+						className={`cursor-pointer  transition duration-300 ease-in-out text-[#999999] ${getTabClassName(
+							"BackendTeam"
+						)}`}
+						onClick={() => setSelectedTab("BackendTeam")}
+					>
+						<span>Backend-Team</span>
+					</div>
+					<div
+						className={`cursor-pointer  transition duration-300 ease-in-out text-[#999999] ${getTabClassName(
+							"AiTeam"
+						)}`}
+						onClick={() => setSelectedTab("AiTeam")}
+					>
+						<span>Ai/ML-Team</span>
 					</div>
 				</div>
 			</div>
