@@ -2,11 +2,11 @@ import { BsLinkedin, BsInstagram, BsTwitter } from 'react-icons/bs';
 
 function Footer() {
   return (
-    <div className="">
+    <div className="flex flex-col">
       <div className="main w-full bg-[#110725] h-76 p-10 flex">
       <div className="w-2/4 align-center p-10">
         <img src="logo.svg" alt=""/>
-        <div className="flex justify-self-start mt-5 gap-5">
+        <div className="flex flex-col md:flex-row justify-self-start mt-5 gap-5">
             <a href="https://www.linkedin.com/company/synkerr/" target="_blank" rel="noopener noreferrer" className="mr-4 flex flex-col">
               <BsLinkedin size={48} />
             </a>

@@ -5,6 +5,7 @@ import Carousel from "./components/Carousel";
 import SocialMedia from "./components/SocialMedia";
 import Footer from "./components/Footer";
 import Objectives from "./components/Objectives";
+import FAQ from "./components/FAQ";
 const App = () => {
 	const bottomRef = useRef(null);
 	const TeamRef = useRef(null);
@@ -16,6 +17,7 @@ const App = () => {
 			<Carousel ref={TeamRef} />
 			<SocialMedia/>
 			<Objectives/>
+			<FAQ/>
 			<Footer/>
 		</div>
 	);

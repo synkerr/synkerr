@@ -19,7 +19,7 @@ export default function HeroSection( {TeamRef} ) {
 				<img
 					src="rotatepattern.svg"
 					style={{ animationDuration: "60s" }}
-					className="absolute bottom-[-20px] lg:w-auto md:w-auto lg:w-[200px] md:w-[145px] left-[-30px] animate-spin duration-[4s]"
+					className="absolute bottom-[-20px] lg:w-auto md:w-auto lg:w-[200px] md:w-[145px] w-[140px] left-[-30px] animate-spin duration-[4s]"
 					alt=""
 				/>
 			</div>
