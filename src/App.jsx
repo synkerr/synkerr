@@ -14,10 +14,10 @@ const App = () => {
 		<div className="App">
 			<HeroSectiontwo TeamRef={TeamRef}/>
 			<Globe />
-			<Carousel ref={TeamRef} />
 			<SocialMedia/>
 			<Objectives/>
 			<FAQ/>
+			<Carousel ref={TeamRef} />
 			<Footer/>
 		</div>
 	);
